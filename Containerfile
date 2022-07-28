@@ -6,7 +6,7 @@ RUN chown :root /work \
     && chown :root /work
 
 COPY target/*-runner.jar /work/application.jar
-COPY target/lib/* /work/lib/
+# COPY target/lib/* /work/lib/
 
 EXPOSE 8080
 
