@@ -1,11 +1,12 @@
 FROM registry.access.redhat.com/ubi8/openjdk-11:1.11
 
-WORKDIR /work/
-RUN chown :root /work \
-    && chmod "g+rwX" /work \
-    && chown :root /work
+# WORKDIR /work/
+# RUN chown :root /work \
+#     && chmod "g+rwX" /work \
+#     && chown :root /work
 
-COPY target/*-runner.jar /work/application.jar
+COPY target/*-runner.jar /deployments/application.jar
+COPY target/*-runner.jar /deployments/app/application.jar
 # COPY target/lib/* /work/lib/
 
 ARG BRANCH
