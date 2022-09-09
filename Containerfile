@@ -1,4 +1,4 @@
-FROM openjdk:11.0-jre-slim
+FROM registry.access.redhat.com/ubi8/openjdk-11:1.11
 
 WORKDIR /work/
 RUN chown :root /work \
