@@ -18,7 +18,7 @@ public class ApplicationConfig {
     URL excelUrl;
 
     @Inject
-    @ConfigProperty(name = "mega.budget-calculation-excel-url")
+    @ConfigProperty(name = "mega.budget-calculation-excel-url") // FIXME remove; not needed anymore
     URL budgetCalculationExcelUrl;
 
     @Inject
