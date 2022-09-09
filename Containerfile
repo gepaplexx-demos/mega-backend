@@ -9,6 +9,8 @@ COPY target/*-runner.jar /deployments/application.jar
 COPY target/*-runner.jar /deployments/app/application.jar
 # COPY target/lib/* /work/lib/
 
+WORKDIR /deployments/
+
 ARG BRANCH
 ARG COMMIT
 ARG VERSION
